@@ -1,0 +1,83 @@
+
+
+.video{
+    margin-top: 5%;
+    margin-bottom: 10px;
+    display: flex;
+   justify-content: center;
+}
+.form{
+    
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 500px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 10px 20px 0;
+    width: 100%;
+}
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+}
+  
+.submit:active {
+    background-color: #06b;
+}
+
+.cancel {
+    background-color:crimson;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+}
+  
+.cancel:active {
+    background-color: #06b;
+}
+
+.capture {
+    background-color:forestgreen;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 25%;
+}
+  
+  

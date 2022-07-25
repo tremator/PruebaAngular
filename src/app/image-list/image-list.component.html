@@ -1,0 +1,49 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body>
+
+
+
+
+<button class="btn btn-info add-new" style="margin: 20px; padding: 10px;" (click)="navigate()">
+    <span> ADD</span>
+</button>
+
+<div *ngIf="!(images.length>0)" class="empty">
+    <p >NO IMAGES</p>
+</div>
+
+<div id="container" *ngFor="let image of images">	
+
+
+	
+	<div class="product-details">
+		
+	<h1>{{image.name}}</h1>
+   
+
+		
+<div class="control">
+	
+	<button class="btn" (click)="delete(image.name)">
+	 
+   <span class="buy">Delete</span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img [src]="image.url" alt="">
+
+</div>
+
+</div>
+
+
+    
+</body>

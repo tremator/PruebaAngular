@@ -1,0 +1,27 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="wrapper fadeInDown">
+    <div class="video">
+
+        <video autoplay id="video"></video>
+        <canvas id="canvas" style="display: none ;"></canvas>
+
+
+    </div>
+    <div class="content">
+        <button class="capture" style="width: 50;" (click)="capture()" *ngIf="!showSubmit"> Capture</button>
+        <div class="form" *ngIf="showSubmit">
+            <div id="formContent">
+                <form (ngSubmit)="submit()">
+                    <input type="text" id="email" class="input" name="name" placeholder="name"
+                        [(ngModel)]="form.name" required>
+                    <input type="submit" class="submit" value="Save">
+                    <button class="cancel" style="width: 50;" (click)="clear()" *ngIf="showSubmit">One more try</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
